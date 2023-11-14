@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://twitter.com/reachauditing'>Currently working with REACH (security research)</a>
+subtitle: <em>Open for employment</em>
 
 profile:
   align: right

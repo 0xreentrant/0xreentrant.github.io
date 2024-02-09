@@ -1,12 +1,21 @@
 ---
-layout: post
+layout: distill
 title: Don't let mocks in your protocol tests fool you
-date: 2023-03-20
+date: 2023-10-19
 description: The biggest threat to developing a protocol is the mental model 
 tags: 
 categories: 
 toc:
-  beginning: true
+  - name: Our case
+  - name: Mocks have tradeoffs  
+  - name: But what are the consequences?
+  - name: How can I ensure our mocks are correct?
+  - name: What do these possibilities look like?
+  - name: Smoke tests
+  - name: Manual testing on a testnet
+  - name: Forking tests
+  - name: Live Integration Tests
+  - name: Conclusion
 ---
 
 # Don't let mocks in your protocol tests fool you

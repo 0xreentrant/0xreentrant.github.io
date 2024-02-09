@@ -211,6 +211,11 @@ blockquote {
 
   .navbar-brand {
     color: var(--global-text-color);
+    text-decoration: underline;
+    &:hover {
+      text-decoration: underline;
+      color: var(--global-theme-color);
+    }
   }
 
   .navbar-nav .nav-item .nav-link {
@@ -432,7 +437,7 @@ footer.sticky-bottom {
   padding-bottom: 3rem;
 
   h1 {
-    color: var(--global-theme-color);
+    color: var(--global-text-color);
     font-size: 5rem;
   }
 }
@@ -487,7 +492,7 @@ footer.sticky-bottom {
     }
 
     a {
-      color: var(--global-text-color);
+      color: var(--global-theme-color);
       text-decoration: none;
 
       &:hover {

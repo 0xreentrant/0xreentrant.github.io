@@ -91,24 +91,22 @@
         {{ content }}
       </d-article>
 
-      <d-appendix>
-        <d-footnote-list></d-footnote-list>
-        <d-citation-list></d-citation-list>
-      </d-appendix>
-
-      <d-bibliography src="{{ page.bibliography | prepend: '/assets/bibliography/' | relative_url }}"></d-bibliography>
-
       {%- if site.disqus_shortname and page.disqus_comments -%}
         {% include disqus.html %}
       {%- endif %}
       {%- if site.giscus.repo and page.giscus_comments -%}
         {% include giscus.html %}
       {%- endif -%}
-
+      <div class="social">
+        <div class="contact-icons">
+          {% include social.html %}
+        </div>
+      </div>
     </div>
 
     <!-- Footer -->
     {%- include footer.html %}
+
 
     {% include scripts/bootstrap.html %}
     {% include scripts/analytics.html %}

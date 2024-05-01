@@ -75,12 +75,14 @@ It was decided that controlling the execution environment would be the best bet.
 - controlling the memory to the granularity required by the bootloader would require brittle and difficult-to-maintain, parallel data structures between the zkEVM and test suite
 - modifying the code changed the attack surface compared to the original implementation
 - any modifications would likely change the memory outlay and performance characteristics of the original implementation
+
 ### Criteria for testing the bootloader
 
 During this time, the bootloader code itself was being analyzed for possible attack vectors. As a result, a handful of criteria were surfaced that could help explore these attacks:
 1. Many transactions would need to be available to load into memory to explore execution paths in the case memory segregation was compromised
 2. Full control over each transaction was necessary to explore cases where invariants across the zkEVM and bootloader execution were violated 
 3. Logging and exploring the memory space was key
+
 ## Exploring tooling options
 
 Initially the in-scope, zkSync Era EVM code was explored to be used for loading the bootloader and constructing its memory.  The understanding was that the zkEVM already had data structures and interfaces available that would make loading arbitrary transactions into the bootloader's memory simple.  
@@ -126,6 +128,7 @@ During the implementation of a rough proof-of-concept, it was made clear that th
 For the first option, the output would be a series of hex-encoded values according to the event parameters.  For the second option, the test node would output the logged strings using when run with the correct command-line setting.  This would be the preferred option.  
 
 Unfortunately, neither seemed to be a great option, since the existing `debugLog` calls in the existing bootloader would not work. A third option was to be forking the `zksync-era` crate that was imported into the project and adding `println!` calls for when the `debugLog` hook was triggered.
+
 ### Results
 
 While there wasn't time to fully implement the plan, the intended plan of attack became:
@@ -135,3 +138,11 @@ While there wasn't time to fully implement the plan, the intended plan of attack
 3. Fill `transactions_to_replay` with the data
 4. Switch the vm execution mode to `Bootloader` while this new command line setting is triggered
 5. Fork and update the `zksync-era` crate to output logs in the `debugLog` hook
+
+#### Diagrams:
+
+{% include figure.html path="assets/img/tx_failure_mode.png" class="img-fluid" %}
+{% include figure.html path="assets/img/bootloader_block_processing.png" class="img-fluid" %}
+{% include figure.html path="assets/img/bootloader_init.png" class="img-fluid" %}
+{% include figure.html path="assets/img/core_contracts_diamonds.png" class="img-fluid" %}
+

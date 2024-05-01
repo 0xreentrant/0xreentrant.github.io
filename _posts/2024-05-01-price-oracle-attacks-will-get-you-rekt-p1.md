@@ -35,7 +35,7 @@ DeFi has seen, in real money, over $8,000,000,000, lost in hacks.  You've probab
 
 ## A Common Tool and a Common Attack
 
-Inverse Finance's Frontier protocol was hacked on April 2nd, 2022 for $15.6m: https://rekt.news/inverse-finance-rekt/ using  a [Price Oracle](https://ethereum.org/en/developers/docs/oracles/) attack.
+Inverse Finance's Frontier protocol was [hacked on April 2nd, 2022 for $15.6m](https://rekt.news/inverse-finance-rekt/ ) using a [Price Oracle](https://ethereum.org/en/developers/docs/oracles/) attack.
 
  Price oracle attacks are among the top 10 types of hacks [according to Immunifi](https://medium.com/immunefi/the-top-10-most-common-vulnerabilities-in-web3-bf7a921d489f#:~:text=V03%3A2023%20Oracle/Price%20Manipulation).  To underscore how high the cost is, consider that the [two](https://rekt.news/mango-markets-rekt/) [costliest](https://rekt.news/cream-rekt-2/) price oracle attacks account for $245,000,000 lost in DeFi alone.  Why this keeps happening is that getting useful price feeds in DeFi is not a solved problem, and so developers face trade-offs in providing useful price feeds when building protocols.  Popular CeFi exchange Coinbase [judges the problem clearly](https://www.coinbase.com/blog/introducing-the-coinbase-price-oracle):
 

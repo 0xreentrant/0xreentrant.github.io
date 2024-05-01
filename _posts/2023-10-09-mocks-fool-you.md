@@ -90,7 +90,7 @@ There's nothing like a real environment to expose the brittleness of a test suit
 
 This one makes sense when your contracts interface with 3rd-party code. Each feature that touches a 3rd-party contract is either triggered in a script or run manually. If the feature breaks, but your mocking tests were all passing, there is an issue with your mock.
 
-{% include figure.html path="assets/img/smoke-tests.png" class="img-fluid" %}
+{% include figure.html path="assets/img/smoke_tests.png" class="img-fluid" %}
 
 For example: imagine you are a protocol developer lead that wants to test that each feature that is mocked works.  You would:
 

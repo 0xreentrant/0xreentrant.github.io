@@ -2,13 +2,13 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: reentrant # the website title (if blank, full name will be used instead)
-first_name: reentrant
+title: Alex Perez (reentrant) # the website title (if blank, full name will be used instead)
+first_name: Alex
 middle_name: 
-last_name: 
-email: 
+last_name: Perez
+email: alexanderlperez@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  security engineer, web3 protocols, and blockchain
+  security engineer, web3 protocols, software
 footer_text:
 keywords: 
 
@@ -68,7 +68,7 @@ github_username: 0xreentrant # your GitHub user name
 gitlab_username: # your GitLab user name
 twitter_username: 0xreentrant # your Twitter handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
-linkedin_username: # your LinkedIn user name
+linkedin_username: alexanderlperez # your LinkedIn user name
 telegram_username: # your Telegram user name
 scholar_userid: # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
@@ -168,7 +168,7 @@ collections:
     output: true
     permalink: /news/:path/
   projects:
-    output: true
+    output: false
     permalink: /projects/:path/
 
 announcements:
@@ -271,8 +271,8 @@ jekyll-archives:
 
 scholar:
 
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Perez]
+  first_name: [Alexander, L.]
 
   style: apa
   locale: en
@@ -364,7 +364,7 @@ enable_tooltips:            false  # enables automatic tooltip links generated
 enable_darkmode:            false   # enables switching between light/dark modes
 enable_navbar_social:       false  # enables displaying social links in the
                                    # navbar on the about page
-enable_project_categories:  true   # enables categorization of projects into
+enable_project_categories:  false   # enables categorization of projects into
                                    # multiple categories
 enable_medium_zoom:         true   # enables image zoom feature (as on medium.com)
 enable_progressbar:         false   # enables a horizontal progress bar linked to the vertical scroll position

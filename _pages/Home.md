@@ -6,7 +6,7 @@ subtitle: <em>Open for employment</em>
 
 profile:
   align: right
-  image: shikamaru.png
+  image: profile.jpg
   image_circular: true # crops the image to make it circular
   more_info: 
 

@@ -16,8 +16,6 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Former web2 fullstack JS developer (12yrs) turned web3 Security Researcher.
-
 <!--
 <a href="">Recent audits</a><br />
 <a href="/blog">Writings</a>
